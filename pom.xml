@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.gao</groupId>
+    <groupId>com.zhihu</groupId>
     <artifactId>tensorflow-client</artifactId>
     <packaging>jar</packaging>
     <version>1.11.0</version>
@@ -177,7 +177,7 @@
                 </executions>
 	    </plugin>
 -->
-            <plugin>
+	    <!--<plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>${plugin.nexus-staging.version}</version>
@@ -187,17 +187,18 @@
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
-            </plugin>
+	    </plugin>-->
         </plugins>
     </build>
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>snapshots</id>
+            <url>http://repo.in.zhihu.com/artifactory/libs-release-local</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>central</id>
+            <url>http://repo.in.zhihu.com/artifactory/libs-release-local</url>
         </repository>
     </distributionManagement>
+
 </project>

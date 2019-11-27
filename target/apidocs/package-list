@@ -1,0 +1,8 @@
+org.tensorflow.distruntime
+org.tensorflow.example
+org.tensorflow.framework
+org.tensorflow.util
+tensorflow
+tensorflow.eager
+tensorflow.serving
+tensorflow.serving.internal
